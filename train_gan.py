@@ -1,34 +1,3 @@
-# Generative AI Framework
-
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
-
-A modular framework for building and deploying generative AI models, including GANs, VAEs, and Diffusion Models. This framework aims to provide a flexible and extensible foundation for researchers and developers to experiment with and deploy various generative architectures.
-
-## ✨ Features
-
--   **Modular Design:** Easily integrate new generative models and components.
--   **Model Implementations:** Includes implementations of popular generative models like GANs, VAEs, and Diffusion Models.
--   **Training Utilities:** Tools for efficient training, logging, and checkpointing.
--   **Evaluation Metrics:** Built-in metrics for assessing the quality and diversity of generated samples.
--   **Deployment Examples:** Guidance for deploying generative models for real-world applications.
-
-## 🚀 Getting Started
-
-### Installation
-
-```bash
-git clone https://github.com/xxavierlsz/generative-ai-framework.git
-cd generative-ai-framework
-pip install -r requirements.txt
-```
-
-### Usage
-
-Example script for training a simple GAN on MNIST:
-
-```python
-# train_gan.py
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -140,25 +109,5 @@ def main():
                 print(f"Epoch [{epoch}/{epochs}] Batch [{i}/{len(dataloader)}] D Loss: {d_loss.item():.4f} G Loss: {g_loss.item():.4f}")
                 save_image(gen_imgs.data[:25], f"images/{epoch}_{i}.png", nrow=5, normalize=True)
 
-if __name__ == \"__main__\":
+if __name__ == "__main__":
     main()
-```
-
-To run the example:
-
-```bash
-python train_gan.py
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please see `CONTRIBUTING.md` for details.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
-
-## 📞 Contact
-
-Alexander Thorne - [alex.thorne.ai@example.com](mailto:alex.thorne.ai@example.com)
-Project Link: [https://github.com/xxavierlsz/generative-ai-framework](https://github.com/xxavierlsz/generative-ai-framework)
